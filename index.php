@@ -26,10 +26,9 @@
  
  
 <div data-role="page">
-	<div data-role="header">
-                <h1 style="height:100px; background:url('http://www.mochly-eldar.com/images/logo_m.jpg') no-repeat scroll 0 0 transparent;"></h1>
-                
-		<h2>מערכת דווח רכבים</h2>
+	<div data-role="header" height="100%">
+            <img border="0" src="logo.png" alt="Logo, Tux" style="width:30%;float:left;display:inline"/>
+            <h1>מערכת דווח רכבים</h1>
 	</div>
 	<div role="main" class="ui-content" id="page-content">
 		<p align='center'>

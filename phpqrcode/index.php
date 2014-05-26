@@ -66,7 +66,7 @@
             
         // user data
         $filename = $PNG_TEMP_DIR.'test'.md5($_REQUEST['data'].'|'.$errorCorrectionLevel.'|'.$matrixPointSize).'.png';
-        QRcode::png(BASE_URL . "?l=" .  $_REQUEST['data'], $filename, $errorCorrectionLevel, $matrixPointSize, 2);    
+        QRcode::png($_REQUEST['data'], $filename, $errorCorrectionLevel, $matrixPointSize, 2);    
         
     } else {    
     
@@ -78,7 +78,7 @@
         
     //display generated file
     echo '<img src="'.$PNG_WEB_DIR.basename($filename).'" /><hr/>';  
-    echo "מספר רכב : " . $_REQUEST['data'];
+    echo "מספר רכב : " . substr($_REQUEST['data'], -8);
     ?>
 </div>
     </body>

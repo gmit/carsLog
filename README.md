@@ -20,3 +20,4 @@ delete install.php<br>
 - [ ] change logo to local file
 - [ ] add xlsx , pdf reports
 - [ ] add monthly report mail
+- [ ] fix update button in admin.php so it'll actually update the db and the table

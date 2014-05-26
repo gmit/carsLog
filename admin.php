@@ -51,7 +51,7 @@ $result = $mysqli->query($sql);
 <?php
 while($row = $result->fetch_assoc()) {
 echo "<tr><td>" . $row["carLP"] . "</td><td>" . $row["driver"] . "</td><td>" . $row["carType"] . "</td><td>" . $row["nextCheckpoint"] . "</td><td>" . ($row["NeedCheck"]?'<h2>זקוק לטיפול</h2>':'') . "</td><td id='" . $row["carLP"] . "'><div class='deleteraw'><a href='#'>מחק רכב</a></div></td><td>";
-$inc = "phpqrcode/?data=" . $row["carLP"];
+$inc = "phpqrcode/?data=" .  urlencode(BASE_URL . "?l=" . $row["carLP"]);
 echo "<a href='$inc'>הדפס מדבקה לרכב</a>";
 echo "</td></tr>";
 }
