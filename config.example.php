@@ -32,10 +32,12 @@ define( 'LOGGED_IN_SALT',   'put your unique phrase here' );
 define( 'NONCE_SALT',       'put your unique phrase here' );
 
 
-/* WordPress Localized Language. */
+/*  Localized Language. */
 define( 'LANG', '' );
 
+/* Path to the site for the phpqrcode class */
+define( 'BASE_URL',  'link to your site');
 
-/* Absolute path to the WordPress directory. */
+/* Absolute path to the root directory. */
 if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');

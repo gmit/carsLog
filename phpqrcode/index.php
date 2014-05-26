@@ -66,7 +66,7 @@
             
         // user data
         $filename = $PNG_TEMP_DIR.'test'.md5($_REQUEST['data'].'|'.$errorCorrectionLevel.'|'.$matrixPointSize).'.png';
-        QRcode::png("http://me.gmit.co.il/?l=" . $_REQUEST['data'], $filename, $errorCorrectionLevel, $matrixPointSize, 2);    
+        QRcode::png(BASE_URL . "?l=" .  $_REQUEST['data'], $filename, $errorCorrectionLevel, $matrixPointSize, 2);    
         
     } else {    
     
