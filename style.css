@@ -1,0 +1,182 @@
+/* ########    cssmenuul */
+#cssmenu ul {
+list-style-type:none;
+width:90%;
+position:relative;
+left:5%;
+display:block;
+height:33px;
+font-size:.6em;
+background:url(bg.png) repeat-x top left;
+font-family:Verdana,Helvetica,Arial,sans-serif;
+border:1px solid #000;
+margin:0;
+padding:0;
+
+/* rounded corners */
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+border-radius: 10px;
+
+/* add box shadows */
+-moz-box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+-webkit-box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+
+}
+
+#cssmenu li {
+display:block;
+float:left;
+margin:0;
+padding:0;
+}
+
+#cssmenu li a {
+float:left;
+color:#A79787;
+text-decoration:none;
+height:24px;
+padding:9px 15px 0;
+font-weight:normal;
+}
+
+#cssmenu li a:hover,
+#cssmenu .active {
+color:#fff;
+background:url(bg.png) repeat-x top left;
+text-decoration:none;
+
+/* rounded corners */
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+border-radius: 10px;
+}
+
+#cssmenu .active a {
+color:#fff;
+font-weight:700;
+}
+
+#cssmenu ul{
+background-color:#DC4900;
+}
+#cssmenu li a:hover, 
+#cssmenu li.active {
+background-color:#F46D00;
+}
+
+/* # ######################*/
+
+/*** central column on page ***/
+div#divContainer
+{
+max-width: 95%;
+margin: 0 auto;
+font-family: Tahoma;
+padding: 0.5em 1em 1em 1em;
+
+/* rounded corners */
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+border-radius: 10px;
+
+/* add gradient */
+background-color: #808080;
+background: -webkit-gradient(linear, left top, left bottom, from(#606060), to(#808080));
+background: -moz-linear-gradient(top, #606060, #808080); 
+
+/* add box shadows */
+-moz-box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+-webkit-box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+box-shadow: 5px 5px 10px rgba(0,0,0,0.3); 
+}
+
+h1 {color:#FFE47A; font-size:1.5em; text-align:right;}
+h2 {color:#B2A055; font-size:1em; text-align:right;}
+
+/*** sample table to demonstrate CSS3 formatting ***/
+table.formatHTML5 {
+width: 100%;
+border-collapse:collapse;
+text-align:left;
+color: #606060;
+}
+
+/*** table's thead section, head row style ***/
+table.formatHTML5 thead tr td {
+background-color: White;
+vertical-align:middle;
+padding: 0.6em;
+font-size:0.8em;
+}
+
+/*** table's thead section, coulmns header style ***/
+table.formatHTML5 thead tr th
+{
+padding: 0.5em;
+/* add gradient */
+background-color: #808080;
+background: -webkit-gradient(linear, left top, left bottom, from(#606060), to(#909090));
+background: -moz-linear-gradient(top, #606060, #909090);
+color: #dadada;
+}
+
+/*** table's tbody section, odd rows style ***/
+table.formatHTML5 tbody tr:nth-child(odd) {
+background-color: #fafafa;
+}
+
+/*** hover effect to table's tbody odd rows ***/
+table.formatHTML5 tbody tr:nth-child(odd):hover
+{
+//cursor:pointer;
+/* add gradient */
+background-color: #808080;
+background: -webkit-gradient(linear, left top, left bottom, from(#606060), to(#909090));
+background: -moz-linear-gradient(top, #606060, #909090);
+color: #dadada;
+}
+
+/*** table's tbody section, even rows style ***/
+table.formatHTML5 tbody tr:nth-child(even) {
+background-color: #efefef;
+}
+
+/*** hover effect to apply to table's tbody section, even rows ***/
+table.formatHTML5 tbody tr:nth-child(even):hover
+{
+//cursor:pointer;
+/* add gradient */
+background-color: #808080;
+background: -webkit-gradient(linear, left top, left bottom, from(#606060), to(#909090));
+background: -moz-linear-gradient(top, #606060, #909090);
+color: #dadada;
+} 
+
+/*** table's tbody section, last row style ***/
+table.formatHTML5 tbody tr:last-child {
+border-bottom: solid 1px #404040;
+}
+
+/*** table's tbody section, separator row pseudo-class ***/
+table.formatHTML5 tbody tr.separator {
+/* add gradient */
+background-color: #808080;
+background: -webkit-gradient(linear, left top, left bottom, from(#606060), to(#909090));
+background: -moz-linear-gradient(top, #606060, #909090);
+color: #dadada;
+}
+
+/*** table's td element, all section ***/
+table.formatHTML5 td {
+vertical-align:middle;
+padding: 0.5em;
+}
+
+/*** table's tfoot section ***/
+table.formatHTML5 tfoot{
+text-align:center;
+color:#303030;
+text-shadow: 0 1px 1px rgba(255,255,255,0.3);
+} 
