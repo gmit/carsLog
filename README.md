@@ -7,10 +7,10 @@
 First beta.
 
 ### Installation instructions
-unzip
-edit config.example.php and rename to config.php
-run install.php
-delete install.php
+unzip <br>
+edit config.example.php and rename to config.php<br>
+run install.php<br>
+delete install.php<br>
 
 ### Get in touch
 * [Email (eran@gmit.co.il)](mailto:eran@gmit.co.il)
