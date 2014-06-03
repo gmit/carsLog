@@ -27,8 +27,8 @@
  
 <div data-role="page">
 	<div data-role="header" height="100%">
-            <img border="0" src="logo.png" alt="Logo, Tux" style="width:30%;float:left;display:inline"/>
-            <h1>מערכת דווח רכבים</h1>
+                <img border="0" src="logo.png" alt="Logo, Tux" style="width:30%;float:left;display:inline"/>
+                <h1>מערכת דווח רכבים</h1>
 	</div>
 	<div role="main" class="ui-content" id="page-content">
 		<p align='center'>
@@ -37,7 +37,8 @@
 <?php if (isset($_GET["l"]))
 {
 ?>
-		        <input type="hidden" name="carLP" id="carLP" value="<?php echo $_GET["l"]; ?>" placeholder="מס רכב" style="margin:0 auto; margin-left:auto; margin-right:auto; align:center; text-align:center;">
+		        <input type="number" name="carLP" id="carLP" value="<?php echo $_GET["l"]; ?>" placeholder="מס רכב" style="margin:0 auto; margin-left:auto; margin-right:auto; align:center; text-align:center;" disabled>
+<a href="index.php">לא הרכב שלי</a>
 <?php }else{ ?>
 		        <input type="number" name="carLP" id="carLP" value="" placeholder="מס רכב" style="margin:0 auto; margin-left:auto; margin-right:auto; align:center; text-align:center;">
 <?php } ?>
